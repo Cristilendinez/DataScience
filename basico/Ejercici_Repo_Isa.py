@@ -28,10 +28,13 @@ def max_de_tres(num1, num2,num3):
         return num1
     elif num2>num1 and num2 >num3:
         return num2
+    elif num1 == num2 == num3:
+        return (num1,num2, num3)
     else:
         return num3
 
-print(max_de_tres(89,56,980)) 
+print(max_de_tres(1,1,1)) 
+
 
 # EJERCICIO 3
 
