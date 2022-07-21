@@ -54,5 +54,50 @@ def calcular_longitud_cadena(cadena):
 print(calcular_longitud_cadena(texto))
 
 
+# EJERCICIO 4
+
+"""
+    Escribir una función que tome un carácter y devuelva True si es una vocal,
+    de lo contrario devuelve False.
+"""
+
+def es_vocal(caracter):
+    vocales=['a','e', 'i','o','u']
+    if caracter in vocales:
+        return True
+    else:
+        return False
+print(es_vocal('a'))
+
+# EJERCICIO 5
+
+"""
+    Escribir una función suma() y una función multip() que sumen y multipliquen
+    respectivamente todos los números de una lista.
+    Por ejemplo: sum([1,2,3,4]) debería devolver 10 y multip([1,2,3,4]) debería devolver 24.
+"""
+def suma(lista):
+    resultado= 0
+    for i in lista:
+        resultado = resultado +(i)
+    print(resultado)
+
+suma ([1,2,3,4])
+    
+    
+def multiplicacion(lista):
+    resultado = lista[0]
+    i = 1
+    while i in range(1,len(lista)):
+        resultado = resultado *lista[i]
+        i +=1
+        print(resultado)
+    
+multiplicacion([1,2,3,4])
+
+
+
+
+
 
 
