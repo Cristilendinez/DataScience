@@ -54,3 +54,11 @@ def superposicion(lista1,lista2):
     return False
 print(superposicion([96,88,105],[99,91,4]))
 
+
+def superposicion(lista1,lista2):
+    for elemento1 in lista1:
+        for elemento2 in lista2:
+            if elemento1 == elemento2:
+                return True
+    return False
+print(superposicion([96,88,105],[99,91,105]))
